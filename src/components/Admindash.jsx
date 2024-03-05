@@ -2,6 +2,7 @@ import { AppBar, Box, Button, IconButton, Toolbar, Typography } from '@mui/mater
 import React from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
+
 const Admindash = () => {
   return (
     <div>
@@ -16,13 +17,15 @@ const Admindash = () => {
                  sx={{mr:2}}
                  >
                   
-                   <MenuIcon> </MenuIcon>
+                   <MenuIcon>  Add course </MenuIcon>
+                  
                 </IconButton>
                 <Typography variant="h6" component="div" sx={{flexGrow:1}}>
                   Admin Dashboard
                 </Typography>
                 <Button color="inherit"><Link to='/Coursemanage' > Add Course </Link>  </Button>
-               
+                <Button color="inherit"><Link to='/Courseview' > Course View </Link>  </Button>
+              
             </Toolbar>
         </AppBar>
 

@@ -23,7 +23,7 @@ const Home = () => {
                   E-Learning platform
                 </Typography>
               
-                <Button variant="outlined"><Link to='/Adminlog'>SIGN UP</Link> </Button><br/>
+              
                 <Button type='submit' variant="outlined"><Link to='/Adminlogin'>LOGIN</Link> </Button><br/><br/>
                 
             </Toolbar>

@@ -4,16 +4,15 @@ mongoose.connect("mongodb+srv://sonu:sonu@cluster0.3frkcq9.mongodb.net/elearning
 .catch(err=>console.log(err));
 
 let sc=mongoose.Schema;
-const courseschema=new sc(
+const userschema=new sc(
     {
-      Cid:String,
-      Ctitle:String,
-      Category:String,
-      Description:String,
-      notes:String     
-      //File:File
+      fname:String,
+      lname:String,
+      pnumber:String,
+      email:String,
+      password:String,
     }
 );
 
-var coursemodel =mongoose.model("course",courseschema)
-module.exports=coursemodel;
+var usermodel =mongoose.model("user",userschema)
+module.exports=usermodel;
